@@ -96,7 +96,4 @@ ul.nav li.current a {
 a:hover.imgs {
 	opacity: 0.7;
 }
-.nav {
-   display: grid;
-   grid-template-columns: auto auto auto auto auto;
- }
+
