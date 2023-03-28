@@ -6,6 +6,14 @@
     <title>Countries to Visit</title>
 	<base href="new2">
 	<link rel="stylesheet" type="text/css" href="mapping/dream.css">
+	<script language="Javascript">
+		function writeText(txt) {
+			document.getElementById("desc").innerHTML = txt;
+		}
+		function dissolveText(txt){
+			document.getElementById("desc").innerHTML = txt;
+		}
+	</script>
 </head>
 <body>
 	<blockquote>
@@ -17,15 +25,30 @@
 	  <li><a href="mailto:manlogon.aaronvincent@ue.edu.ph">MAIL ME</a></li>
 	</ul><br>
 	
+	<div style="float:left; margin-bottom:80px;margin-right:25px">
 	<img class="travel" src="mapping/pics/travel.png" alt="This is an image of places that I want to visit" 
 	usemap="#travelling"/>
 	<map name="travelling">
-		<area shape="poly" coords="49,115, 268,115, 126,706 0,706 0,315" href="mapping/japan.html" target="new2"/>
-		<area shape="poly" coords="288,52, 508,52, 366,645, 147,645" href="mapping/sk.html" target="new2"/>
-		<area shape="poly" coords="501,113, 721,113, 579,706, 359,706" href="mapping/sg.html" target="new2"/>
-		<area shape="poly" coords="744,52, 963,52, 820,645, 602,645" href="mapping/china.html" target="new2"/>
-		<area shape="poly" coords="954,115, 1079,115, 1079,506, 1032,706, 812,706" href="mapping/netherlands.html" target="new2"/>
+		<area shape="poly" coords="49,115, 268,115, 126,706 0,706 0,315" href="mapping/japan.html" target="new2"
+		onMouseOver="writeText('<b>5 FACTS ABOUT JAPAN</b><ul><li>Japan consists of 6,852 islands.</li><li>Over a thousand tame sika deer roam the streets of Nara, Japan.</li><li>The bow is an important form of greeting in Japan, and Japanese people work hard to perfect it.</li><li>The kimono is a traditional Japanese garment worn by both men and women.</li><li>The world’s largest seafood market is the Tsukiji fish market in Tokyo.</li></ul>');"
+		onMouseOut="dissolveText('Hover/click the image to see more information.');"/>
+		<area shape="poly" coords="288,52, 508,52, 366,645, 147,645" href="mapping/sk.html" target="new2"
+		onMouseOver="writeText('<b>5 FACTS ABOUT SOUTH KOREA</b><ul><li>South Korea Consists Of More Than 4000 Islands.</li><li>South Korea’s Jeju Island Is The Country’s Largest Island.</li><li>South Korea Is A Mountainous Country.</li><li>South Koreans Used To Be One Year Older When They Were Born (Not Anymore).</li><li>All Males In South Korea Are Required To Serve In The Military.</li></ul>')"
+		onMouseOut="dissolveText('Hover/click the image to see more information.');"/>
+		<area shape="poly" coords="501,113, 721,113, 579,706, 359,706" href="mapping/sg.html" target="new2"
+		onMouseOver="writeText('<b>5 FACTS ABOUT SINGAPORE</b><ul><li>It’s a city of not just one island, but 64.</li><li>It’s home to the world’s first night zoo.</li><li>It’s a city of (man-made) waterfalls.</li><li>It’s one of the world’s greenest cities.</li><li>The Lion City may actually have been inspired by a tiger.</li></ul>')"
+		onMouseOut="dissolveText('Hover/click the image to see more information.');"/>
+		<area shape="poly" coords="744,52, 963,52, 820,645, 602,645" href="mapping/china.html" target="new2"
+		onMouseOver="writeText('<b>5 FACTS ABOUT CHINA</b><ul><li>The Great Wall of China is actually a collection of walls.</li><li>Chinese food varies greatly from region to region.</li><li>The Forbidden City is the biggest imperial palace in the world.</li><li>The Yangtze River is the longest river in Asia.</li><li>Shanghai has its own dialect.</li></ul>')"
+		onMouseOut="dissolveText('Hover/click the image to see more information.');"/>
+		<area shape="poly" coords="954,115, 1079,115, 1079,506, 1032,706, 812,706" href="mapping/netherlands.html" target="new2"
+		onMouseOver="writeText('<b>5 FACTS ABOUT NETHERLANDS</b><ul><li>Dutch men are the world’s tallest people.</li><li>The Netherlands is the world’s biggest flower exporter.</li><li>Amsterdam has over 1,200 bridges.</li><li>One-third of the Netherlands is under sea level.</li><li>The Netherlands was the first country to legalise same-sex marriage.</li></ul>')"
+		onMouseOut="dissolveText('Hover/click the image to see more information.');"/>
 	</map>
+	</div>
+	<div class="desc">
+	<p id="desc">Mouse over the places to see a short description and interesting facts about the country.</p>
+	</div>
 	<br><br><br>
 
 </body>
